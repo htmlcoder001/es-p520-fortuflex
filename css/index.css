@@ -302,18 +302,137 @@ header {
 }
 
 .comments {
-  position: relative;
-  margin-top: 40px
+  padding-left: 2px;
+  padding-right: 2px;
+  
+  max-width: 960px;
+  margin: 0 auto;
 }
 
+.down-menu {
+  display: flex;
+  margin-left: 60px;
+  margin-top: 5px;
+}
+
+div.down-menu p {
+  cursor: pointer;
+  color: rgb(119, 119, 119);
+  font-weight: 600!important;
+  font-size: 12px!important;
+  padding: 0 10px;
+  margin: 0!important;
+  width: auto;
+}
+.emodji {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  box-shadow: -3px 2px 5px rgb(133, 133, 133);
+  border-radius: 15px;
+  position: absolute;
+  background-color: white;
+  right: 10px;
+  bottom: -5px;
+  padding: 2px 0;
+  padding-right: 5px;
+  color: #999;
+  font-family: Arial!important;
+}
+
+a.le-form-le-button {
+  background: rgb(52, 152, 219) -webkit-gradient(linear, left top, left bottom, from(rgb(52, 152, 219)), to(rgb(41, 128, 185))) repeat scroll 0% 0%;
+  background: rgb(52, 152, 219) -webkit-linear-gradient(top, rgb(52, 152, 219), rgb(41, 128, 185)) repeat scroll 0% 0%;
+  background: rgb(52, 152, 219) -moz-linear-gradient(top, rgb(52, 152, 219), rgb(41, 128, 185)) repeat scroll 0% 0%;
+  background: rgb(52, 152, 219) -o-linear-gradient(top, rgb(52, 152, 219), rgb(41, 128, 185)) repeat scroll 0% 0%;
+  background: rgb(52, 152, 219) linear-gradient(to bottom, rgb(52, 152, 219), rgb(41, 128, 185)) repeat scroll 0% 0%;
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  border-radius: 28px;
+  font-family: Arial!important;
+  color: #fff;
+  font-size: 22px;
+  padding: 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 310px;
+  max-width: 90%;
+  margin: 20px auto;
+  text-transform: uppercase;
+  height: 54px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#commentPush {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.emodji img {
+  margin: 0;
+}
+
+.quantity {
+  color: #45688e;
+  font-weight: 700;
+  padding: 6px;
+  background: #dae2e8;
+  
+  max-width: 960px;
+  margin: 32px auto;
+}
 .comment {
-  padding: 30px;
-  background: rgba(114, 168, 211, .2) none repeat scroll 0% 0%;
-  margin-bottom: 30px
+  border-bottom: 1px solid #dae1e8;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 
-.comment img {
-  margin-top: 5px
+.comment .avatar {
+  border-radius: 100%;
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: top;
+  object-fit: cover;
+}
+
+.comm_text {
+  position: relative;
+  background-color: #bfbfbf26;
+  border-radius: 7px;
+  display: inline-block;
+  vertical-align: top;
+  width: -webkit-calc(100% - 65px);
+  width: -moz-calc(100% - 65px);
+  width: calc(100% - 65px)
+}
+
+.comment .comm_text .user_name {
+  color: rgb(36, 36, 36);
+  font-weight: 600!important;
+  font-size: 13px!important;
+  margin-bottom: 0;
+  padding: 0 10px;
+  margin-top: 5px;
+}
+
+.comment .comm_text .text {
+  font-size: 15px!important;
+  padding: 0 10px;
+  margin-bottom: 16px;
+}
+
+.comment .comm_text .time {
+  color: #999;
+  margin-bottom: 0
 }
 
 .text1 {
@@ -1436,6 +1555,8 @@ input[type="submit"]:active {
   .visible-480 {
     display: none
   }
+  
+  
 }
 
 @media screen and (max-width:480px) {
@@ -1445,6 +1566,17 @@ input[type="submit"]:active {
 
   .text-center-480 {
     text-align: center
+  }
+  
+  .down-menu {
+    margin-left: 0;
+    margin-top: 6px;
+    justify-content: flex-end;
+  }
+  div.down-menu p {
+    white-space: nowrap;
+    font-size: 10px!important;
+    padding: 0 6px;
   }
 }
 
